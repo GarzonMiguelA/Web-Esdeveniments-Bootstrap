@@ -1,0 +1,14 @@
+carouselExample, carousel-inner, carousel-item, img {
+    width: 100px;
+}
+
+#carouselExample{
+    width: 50%;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.container-modal{
+    margin-top: 80px;
+    text-align: center;
+}

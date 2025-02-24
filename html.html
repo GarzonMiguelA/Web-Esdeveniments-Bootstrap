@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <!-- Crear un portfolio con bootstrap -->
+    <!-- Debe tener TITULO -->
+    <!-- Carrusel con 3 imagenes que representen tres diferentes acontecimientos (competicion deportes, conierto, seri nueva, etc.) -->
+    <!-- Boton de reserva que abra un modal de Bootstrap -->
+    <!-- Modal que contenga un formulario para poder introducir los datos personales del user (nom, etc.), un input select para escoger un acontecimiento i un input per poder introducir la data i l’hora -->
+    <header class="bg-primary text-white text-center py-5">
+        <h1>Portfolio Miguel Angel</h1>
+    </header>
+
+    <!-- Vamos con el carrousel: -->
+    <div id="carouselExample" class="carousel slide " data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/pexels-koolshooters-9945197.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="img/conciertos-en-Barcelona-2025-scaled.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="img/primera-imagen-protagonistas-respira-nueva-serie-carlos-montero-netflix_98.webp" class="d-block w-100">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExample" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExample" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Boton con modal en bootstrap -->
+    <div class="container-modal">
+        <h3>¿Te han gustado los anteriores acontecimientos?</h3>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+            Clic aquí e infórmate
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Reserva tu evento</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Reserva en este link, <a href="https://www.booking.com" target="_blank">https://www.booking.com</a>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Entendido</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
